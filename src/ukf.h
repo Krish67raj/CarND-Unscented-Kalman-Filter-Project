@@ -29,7 +29,7 @@ public:
   MatrixXd P_;
 
   ///* predicted sigma points matrix
-  MatrixXd Xsig_pred_;
+  MatrixXd Xsig_pred;
 
   ///* time when the state is true, in us
   long long time_us_;
@@ -56,16 +56,20 @@ public:
   double std_radrd_ ;
 
   ///* Weights of sigma points
-  VectorXd weights_;
+  VectorXd weights;
 
   ///* State dimension
-  int n_x_;
+  int n_x;
 
   ///* Augmented state dimension
-  int n_aug_;
+  int n_aug;
 
   ///* Sigma point spreading parameter
-  double lambda_;
+  double lambda;
+  
+  double lambda_aug;
+  
+   
 
 
   /**
